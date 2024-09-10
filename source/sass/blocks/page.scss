@@ -9,8 +9,9 @@
   margin: 0;
 
   font-family: "Manrope", "Arial", sans-serif;
-  color: $second-grey;
-  background-color: $basic-white;
+  color: $basic-grey;
+
+  background-color: $second-grey;
 
   display: grid;
   grid-template-rows: min-content 1fr min-content;

@@ -1,0 +1,70 @@
+.button {
+  padding: 15px 4px 15px 20px;
+
+  background-color: transparent;
+  border: 1px $basic-blue solid;
+  border-radius: 30px;
+
+  display: grid;
+  grid-template-columns: auto 34px;
+  align-items: center;
+  gap: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 4px 20px 30px;
+
+    grid-template-columns: auto 46px;
+    gap: 30px;
+  }
+}
+
+.button__text {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.24px;
+  color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 34px;
+    height: 34px;
+
+    top: 50%;
+    right: -20px;
+    transform: translate(100%, -50%);
+
+    background-color: $basic-blue;
+    border-radius: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+
+      right: -30px;
+    }
+  }
+}
+
+.button__icon {
+  margin-left: 12px;
+
+  stroke: $basic-white;
+
+  z-index: 20;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
+  }
+}
