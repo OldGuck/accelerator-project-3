@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body class="page__body">
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
 
     <header class="header">
 
@@ -30,7 +30,53 @@
       <section data-test="news">news</section>
       <section data-test="FAQ">FAQ</section>
       <section data-test="reviews">reviews</section>
-      <section data-test="contacts">contacts</section>
+
+      <section class="contacts" data-test="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__text-wrapper">
+            <h2 class="contacts__title main-title">
+              Контакты
+            </h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3 class="contacts__name">
+                  Центральный офис
+                </h3>
+                <span class="contacts__text">
+                  г. Новосибирск, ул. Щетинкина 68, культурный центр
+                </span>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__name">
+                  Телефон
+                </h3>
+                <!-- Для состояния disabled необходимо добавить класс contacts__text с модификатором disabled -->
+                <a class="contacts__text contacts__text--interactive" href="tel:+796387687676">
+                  +7 963 876 876 76
+                </a>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__name">
+                  Email
+                </h3>
+                <!-- Для состояния disabled необходимо добавить класс contacts__text с модификатором disabled -->
+                <a class="contacts__text contacts__text--interactive" href="mailto:Info@stazh.ru">
+                  Info@stazh.ru
+                </a>
+              </li>
+            </ul>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x" width="1240" height="486">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x" width="678" height="500">
+            <source type="image/webp" srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x" width="290" height="240">
+            <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x" width="1240" height="486">
+            <source type="image/jpg" media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x" width="678" height="500">
+            <img class="contacts__map" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" width="290" height="240" alt="Мы на карте: г. Новосибирск, ул. Щетинкина 68, культурный центр.">
+          </picture>
+        </div>
+      </section>
+
       <section data-test="form">form</section>
     </main>
 
