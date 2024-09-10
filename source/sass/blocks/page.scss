@@ -1,0 +1,16 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-width: $mobile-width;
+  min-height: 100%;
+
+  margin: 0;
+
+  font-family: "Manrope", "Arial", sans-serif;
+  background-color: $basic-white;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
