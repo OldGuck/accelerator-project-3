@@ -154,8 +154,9 @@
     width: 42px;
     height: 42px;
 
-    top: -22px;
-    left: -20px;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
 
     background-image: url("/__spritemap#sprite-marker-view");
   }
