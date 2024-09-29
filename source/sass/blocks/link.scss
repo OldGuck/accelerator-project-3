@@ -1,0 +1,15 @@
+.link {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $basic-blue;
+  border-radius: 100%;
+}
+
+.link__icon {
+  stroke: $basic-white;
+}

@@ -1,0 +1,59 @@
+.slider {
+  display: flex;
+  gap: 8px;
+}
+
+.slider__button {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 100%;
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    opacity: 70%;
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    opacity: 100%;
+
+    background-color: $basic-white;
+  }
+
+  &:active {
+    opacity: 100%;
+
+    background-color: $basic-white;
+
+    .slider__button-icon {
+      opacity: 70%;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    background-color: transparent;
+
+    .slider__button-icon {
+      stroke: $disabled;
+    }
+  }
+}
+
+.slider__button-icon {
+  stroke: $basic-blue;
+}

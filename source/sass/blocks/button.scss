@@ -16,6 +16,10 @@
     grid-template-columns: auto 46px;
     gap: 30px;
   }
+
+  &--light {
+    border-color: $basic-white;
+  }
 }
 
 .button__text {
@@ -55,6 +59,14 @@
       right: -30px;
     }
   }
+
+  &--light {
+    color: $basic-white;
+  }
+
+  &--light::after {
+    background-color: $basic-white;
+  }
 }
 
 .button__icon {
@@ -66,5 +78,9 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 18px;
+  }
+
+  &--light {
+    stroke: $basic-blue;
   }
 }

@@ -1,0 +1,45 @@
+.socials {
+  @media (min-width: $desktop-width) {
+    grid-column: -1;
+    grid-row: 1;
+  }
+}
+
+.socials__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+}
+
+.socials__link {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $basic-blue;
+  border-radius: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+  }
+
+  svg {
+    @media (min-width: $tablet-width) {
+      scale: 160%;
+    }
+  }
+}

@@ -13,13 +13,7 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body class="page__body">
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-
     <header class="header">
-
     </header>
 
     <main class="main-container">
@@ -91,7 +85,134 @@
         </div>
       </section>
 
-      <section data-test="programs">programs</section>
+      <section class="programs" data-test="programs">
+        <div class="programs__container container">
+          <h2 class="programs__title main-title">
+            Программы
+          </h2>
+          <button class="programs__button button" type="button">
+            <span class="programs__button-text button__text">
+              Все программы
+            </span>
+            <svg class="programs__button-icon button__icon" width="10" height="10">
+              <use href="/__spritemap#sprite-button-arrow"></use>
+            </svg>
+          </button>
+          <div class="programs__swiper-wrapper swiper-container">
+            <ul class="programs__list swiper-wrapper">
+              <li class="programs__item swiper-slide">
+                <div class="programs__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/programs-1-desktop@1x.webp 1x, ./img/programs-1-desktop@2x.webp 2x" width="392" height="420">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/programs-1-tablet@1x.webp 1x, ./img/programs-1-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="./img/programs-1-mobile@1x.webp 1x, ./img/programs-1-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/programs-1-desktop@1x.jpg 1x, ./img/programs-1-desktop@2x.jpg 2x" width="392" height="420">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/programs-1-tablet@1x.jpg 1x, ./img/programs-1-tablet@2x.jpg 2x" width="324" height="420">
+                    <img class="programs__picture" src="./img/programs-1-mobile@1x.jpg" srcset="./img/programs-1-mobile@2x.jpg 2x" width="290" height="400" alt="Стажёр и его куратор.">
+                  </picture>
+                </div>
+                <div class="programs__text-wrapper">
+                  <h3 class="programs__name">
+                    Стажировки
+                  </h3>
+                  <div class="programs__description-wrapper">
+                    <p>
+                      Получите незаменимый опыт работы в крупнейших мировых компаниях.
+                    </p>
+                    <a class="programs__link link" href="#">
+                      <span class="visually-hidden">
+                        Подробнее
+                      </span>
+                      <svg class="programs__link-icon link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-button-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="programs__item swiper-slide">
+                <div class="programs__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/programs-2-desktop@1x.webp 1x, ./img/programs-2-desktop@2x.webp 2x" width="392" height="420">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/programs-2-tablet@1x.webp 1x, ./img/programs-2-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="./img/programs-2-mobile@1x.webp 1x, ./img/programs-2-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/programs-2-desktop@1x.jpg 1x, ./img/programs-2-desktop@2x.jpg 2x" width="392" height="420">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/programs-2-tablet@1x.jpg 1x, ./img/programs-2-tablet@2x.jpg 2x" width="324" height="420">
+                    <img class="programs__picture" src="./img/programs-2-mobile@1x.jpg" srcset="./img/programs-2-mobile@2x.jpg 2x" width="290" height="400" alt="Волонтёр держит саженец.">
+                  </picture>
+                </div>
+                <div class="programs__text-wrapper">
+                  <h3 class="programs__name">
+                    Волонтёрство
+                  </h3>
+                  <div class="programs__description-wrapper">
+                    <p>
+                      Помогайте другим и развивайте свои лидерские качества.
+                    </p>
+                    <a class="programs__link link" href="#">
+                      <span class="visually-hidden">
+                        Подробнее
+                      </span>
+                      <svg class="programs__link-icon link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-button-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="programs__item swiper-slide">
+                <div class="programs__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/programs-3-desktop@1x.webp 1x, ./img/programs-3-desktop@2x.webp 2x" width="392" height="420">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/programs-3-tablet@1x.webp 1x, ./img/programs-3-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="./img/programs-3-mobile@1x.webp 1x, ./img/programs-3-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/programs-3-desktop@1x.jpg 1x, ./img/programs-3-desktop@2x.jpg 2x" width="392" height="420">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/programs-3-tablet@1x.jpg 1x, ./img/programs-3-tablet@2x.jpg 2x" width="324" height="420">
+                    <img class="programs__picture" src="./img/programs-3-mobile@1x.jpg" srcset="./img/programs-3-mobile@2x.jpg 2x" width="290" height="400" alt="Студент пишет конспект.">
+                  </picture>
+                </div>
+                <div class="programs__text-wrapper">
+                  <h3 class="programs__name">
+                    Учёба
+                  </h3>
+                  <div class="programs__description-wrapper">
+                    <p>
+                      Получите образование и измените своё будущее.
+                    </p>
+                    <a class="programs__link link" href="#">
+                      <span class="visually-hidden">
+                        Подробнее
+                      </span>
+                      <svg class="programs__link-icon link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-button-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="programs__scrollbar"></div>
+          <div class="programs__button-wrapper slider">
+            <button class="programs__slider-button programs__slider-button--prev slider__button slider__button--prev" type="button">
+              <svg class="programs__slider-button-icon slider__button-icon" width="10" height="10">
+                <use href="/__spritemap#sprite-slider-arrow"></use>
+              </svg>
+              <span class="visually-hidden">
+                Показать предыдущий слайд.
+              </span>
+            </button>
+            <button class="programs__slider-button programs__slider-button--next slider__button slider__button--next" type="button">
+              <svg class="programs__slider-button-icon slider__button-icon" width="10" height="10">
+                <use href="/__spritemap#sprite-slider-arrow"></use>
+              </svg>
+              <span class="visually-hidden">
+                Показать следующий слайд.
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
 
       <section class="grant" data-test="grant">
         <div class="grant__container container">
@@ -209,7 +330,7 @@
             <li class="faq__item">
               <div class="faq__question-wrapper">
                 <h3 class="faq__question">
-                  Признаётся ли учёба в рамках проекта для дальнейшего обучения?
+                  Признаётся ли учёба в рамках проекта<br>для дальнейшего ообучения?
                 </h3>
                 <button class="faq__button" type="button">
                   <span class="visually-hidden">
@@ -244,7 +365,114 @@
         </div>
       </section>
 
-      <section data-test="reviews">reviews</section>
+      <section class="reviews" data-test="reviews">
+        <div class="reviews__container container">
+          <h2 class="reviews__title main-title">
+            Отзывы
+          </h2>
+          <div class="reviews__swiper-wrapper swiper-container">
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__item-wrapper">
+                  <div class="reviews__picture-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./img/reviews-1-tablet@1x.webp 1x, ./img/reviews-1-tablet@2x.webp 2x" width="90" height="90">
+                      <source type="image/webp" srcset="./img/reviews-1-mobile@1x.webp 1x, ./img/reviews-1-mobile@2x.webp 2x" width="60" height="60">
+                      <source type="image/jpg" media="(min-width: 768px)" srcset="./img/reviews-1-tablet@1x.jpg 1x, ./img/reviews-1-tablet@2x.jpg 2x" width="90" height="90">
+                      <img class="reviews__picture" src="./img/reviews-1-mobile@1x.jpg" srcset="./img/reviews-1-mobile@2x.jpg 2x" width="60" height="60" alt="Аватар пользователя.">
+                    </picture>
+                  </div>
+                  <h3 class="reviews__name">
+                    Лола<br>Алекс
+                  </h3>
+                  <dl class="reviews__data-list">
+                    <div class="reviews__data-item">
+                      <dt class="reviews__data-name">
+                        Программа
+                      </dt>
+                      <dd class="reviews__data-value">
+                        Masa Art Challenge
+                      </dd>
+                    </div>
+                    <div class="reviews__data-item">
+                      <dt class="reviews__data-name">
+                        Дата
+                      </dt>
+                      <dd class="reviews__data-value">
+                        Осень 2022
+                      </dd>
+                    </div>
+                  </dl>
+                  <p class="reviews__text-main">
+                    Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!
+                  </p>
+                  <p>
+                    Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.
+                  </p>
+                </div>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__item-wrapper">
+                  <div class="reviews__picture-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./img/reviews-2-tablet@1x.webp 1x, ./img/reviews-2-tablet@2x.webp 2x" width="90" height="90">
+                      <source type="image/webp" srcset="./img/reviews-2-mobile@1x.webp 1x, ./img/reviews-2-mobile@2x.webp 2x" width="60" height="60">
+                      <source type="image/jpg" media="(min-width: 768px)" srcset="./img/reviews-2-tablet@1x.jpg 1x, ./img/reviews-2-tablet@2x.jpg 2x" width="90" height="90">
+                      <img class="reviews__picture" src="./img/reviews-2-mobile@1x.jpg" srcset="./img/reviews-2-mobile@2x.jpg 2x" width="60" height="60" alt="Аватар пользователя.">
+                    </picture>
+                  </div>
+                  <h3 class="reviews__name">
+                    Давид<br>Иванов
+                  </h3>
+                  <dl class="reviews__data-list">
+                    <div class="reviews__data-item">
+                      <dt class="reviews__data-name">
+                        Программа
+                      </dt>
+                      <dd class="reviews__data-value">
+                        Volunteer Chance
+                      </dd>
+                    </div>
+                    <div class="reviews__data-item">
+                      <dt class="reviews__data-name">
+                        Дата
+                      </dt>
+                      <dd class="reviews__data-value">
+                        Лето 2022
+                      </dd>
+                    </div>
+                  </dl>
+                  <p class="reviews__text-main">
+                    Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.
+                  </p>
+                  <p>
+                    Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="reviews__scrollbar"></div>
+          <div class="reviews__button-wrapper slider">
+            <button class="reviews__slider-button reviews__slider-button--prev slider__button slider__button--prev" type="button">
+              <svg class="reviews__slider-button-icon slider__button-icon" width="10" height="10">
+                <use href="/__spritemap#sprite-slider-arrow"></use>
+              </svg>
+              <span class="visually-hidden">
+                Показать предыдущий слайд.
+              </span>
+            </button>
+            <button class="reviews__slider-button reviews__slider-button--next slider__button slider__button--next" type="button">
+              <svg class="reviews__slider-button-icon slider__button-icon" width="10" height="10">
+                <use href="/__spritemap#sprite-slider-arrow"></use>
+              </svg>
+              <span class="visually-hidden">
+                Показать следующий слайд.
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
 
       <section class="contacts" data-test="contacts">
         <div class="contacts__container container">
@@ -292,11 +520,171 @@
         </div>
       </section>
 
-      <section data-test="form">form</section>
+      <section class="form" data-test="form">
+        <div class="form__container container">
+          <div class="form__form-wrapper">
+            <form class="form__main-wrapper" method="post" action="https://echo.htmlacademy.ru">
+              <div class="form__text-wrapper">
+                <h2 class="form__title main-title">
+                  Напишите нам
+                </h2>
+                <p class="form__description">
+                  Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!
+                </p>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="name">
+                  Имя
+                </label>
+                <input class="form__input" id="name" type="text" name="name" autocomplete="off" required>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="phone">
+                  Телефон
+                </label>
+                <input class="form__input" id="phone" type="tel" name="phone" autocomplete="off" required>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="message">
+                  Ваше сообщение
+                </label>
+                <textarea class="form__input form__input--textarea" id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="city">
+                  Выберите город
+                </label>
+                <select class="form__select" id="city" name="city" required>
+                  <option value="Saint-Petersburg-1">
+                    Санкт-Петербург
+                  </option>
+                  <option value="Saint-Petersburg-2">
+                    Санкт-Петербург
+                  </option>
+                  <option value="Saint-Petersburg-3">
+                    Санкт-Петербург
+                  </option>
+                  <option value="Saint-Petersburg-4">
+                    Санкт-Петербург
+                  </option>
+                </select>
+              </div>
+              <div class="form__input-checkbox-wrapper">
+                <input class="visually-hidden" id="consent-of-personal-data" type="checkbox" name="consent-of-personal-data" required>
+                <span class="form__input-checkbox">
+                </span>
+                <label class="form__label-checkbox" for="consent-of-personal-data">
+                  Я согласен на обработку моих персональных данных
+                </label>
+              </div>
+              <button class="form__button button button--light" type="submit">
+                <span class="form__button-text button__text button__text--light">
+                  Отправить
+                </span>
+                <svg class="form__button-icon button__icon button__icon--light" width="10" height="10">
+                  <use href="/__spritemap#sprite-button-arrow"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-      <section data-test="footer">footer</section>
+    <footer class="footer" data-test="footer">
+      <div class="footer__container container">
+        <img class="footer__logo" src="/__spritemap#sprite-logo-view" width="52" height="52" alt="Логотип Internship.">
+
+        <section class="addition">
+          <h2 class="visually-hidden">
+            Дополнительная навигация
+          </h2>
+          <nav class="addition__navigation" aria-label="Дополнительная навигация по сайту.">
+            <ul class="addition__navigation-list">
+              <li class="addition__navigation-item">
+                <a class="addition__navigation-link" href="#">
+                  О проекте
+                </a>
+              </li>
+              <li class="addition__navigation-item">
+                <a class="addition__navigation-link" href="#">
+                  Программы
+                </a>
+              </li>
+              <li class="addition__navigation-item">
+                <a class="addition__navigation-link" href="#">
+                  Как поехать
+                </a>
+              </li>
+              <li class="addition__navigation-item">
+                <a class="addition__navigation-link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="addition__navigation-item">
+                <a class="addition__navigation-link" href="#">
+                  Новости
+                </a>
+              </li>
+              <li class="addition__navigation-item">
+                <a class="addition__navigation-link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="more">
+          <h2 class="visually-hidden">
+            Прочее
+          </h2>
+          <a class="more__privacy-policy-link" href="#">
+            Политика конфиденциальности
+          </a>
+          <p class="more__text">
+            Стажировка © 2023 Все права защищены
+          </p>
+        </section>
+
+        <section class="socials">
+          <h2 class="visually-hidden">
+            Социальные сети
+          </h2>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="https://vk.com/" target="_blank">
+                <svg class="socials__icon" width="12" height="6">
+                  <use href="/__spritemap#sprite-vk-icon"></use>
+                </svg>
+                <span class="visually-hidden">
+                  Вконтакте.
+                </span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://ok.ru/" target="_blank">
+                <svg class="socials__icon" width="7" height="12">
+                  <use href="/__spritemap#sprite-ok-icon"></use>
+                </svg>
+                <span class="visually-hidden">
+                  Одноклассники.
+                </span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.reddit.com/" target="_blank">
+                <svg class="socials__icon" width="11" height="11">
+                  <use href="/__spritemap#sprite-reddit-icon"></use>
+                </svg>
+                <span class="visually-hidden">
+                  Реддит.
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </footer>
     <script type="module" src="js/main.js"></script>
   </body>

@@ -1,0 +1,24 @@
+.footer__container {
+  padding: 40px 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 45px;
+
+    display: grid;
+    grid-template-columns: min-content auto 128px;
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 100px 40px;
+
+    grid-template-columns: min-content 2fr 1fr;
+    gap: 25px 52px;
+  }
+}

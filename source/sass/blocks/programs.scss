@@ -1,0 +1,269 @@
+.programs__container {
+  position: relative;
+
+  width: $mobile-width;
+
+  display: grid;
+  grid-template-columns: 205px auto;
+  grid-template-areas: "title navigation" "slider slider" "button scrollbar";
+  align-items: center;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+
+    padding-right: 0;
+
+    grid-template-columns: 382px 118px auto;
+    grid-template-areas: "title button button" "slider slider slider" "scrollbar scrollbar navigation";
+    gap: 40px 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+
+    padding: 60px 100px;
+
+    grid-template-columns: 956px 130px auto;
+    gap: 40px 50px;
+  }
+}
+
+.programs__title {
+  margin: 5px 0;
+
+  color: $basic-blue;
+
+  grid-area: title;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.programs__button {
+  grid-area: button;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 2px 0;
+  }
+}
+
+.programs__swiper-wrapper {
+  overflow: hidden;
+
+  width: 290px;
+
+  margin: 0 auto;
+
+  grid-area: slider;
+
+  @media (min-width: $tablet-width) {
+    width: 723px;
+
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+
+    padding-right: 0;
+  }
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    @media (min-width: $tablet-width) {
+      width: 324px;
+
+      min-height: 420px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 392px;
+    }
+  }
+}
+
+.programs__item {
+  position: relative;
+}
+
+.programs__picture-wrapper {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -20;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba($basic-blue, 20%);
+    border-radius: 12px;
+  }
+}
+
+.programs__picture {
+  border-radius: 12px;
+
+  display: block;
+}
+
+.programs__text-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+
+  padding: 250px 10px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (min-width: $tablet-width) {
+    min-height: 420px;
+
+    padding: 280px 20px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 51px;
+    padding-bottom: 17px;
+  }
+}
+
+.programs__name {
+  position: relative;
+
+  width: 146px;
+
+  margin: 0;
+  padding: 18px 18px 6px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $basic-blue;
+
+  background-color: $basic-white;
+  border-radius: 12px 12px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 173px;
+
+    font-size: 20px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 194px;
+
+    padding-right: 12px;
+
+    font-size: 24px;
+    line-height: 17px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+
+    background-image: url("/__spritemap#sprite-angle-view");
+  }
+}
+
+.programs__description-wrapper {
+  padding: 12px 18px 15px;
+
+  display: grid;
+  grid-template-columns: auto 30px;
+  gap: 16px;
+  align-items: center;
+
+  background-color: $basic-white;
+  border-radius: 0 12px 12px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 82px;
+  }
+
+  p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 14px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      line-height: 18px;
+    }
+  }
+}
+
+.programs__scrollbar {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    display: block;
+
+    grid-area: scrollbar;
+    background-color: rgba($basic-blue, 20%);
+  }
+
+  > div {
+    @media (min-width: $tablet-width) {
+      background-color: $basic-blue;
+    }
+  }
+}
+
+.programs__button-wrapper {
+  justify-content: flex-end;
+
+  grid-area: navigation;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
