@@ -43,21 +43,36 @@
     padding: 40px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
+    outline: none;
+
+    background-color: $basic-white;
 
     .faq__button {
-      background-color: lightblue;
+      background-color: transparent;
+    }
+
+    .faq__button::before,
+    .faq__button::after {
+      background-color: $basic-blue;
+    }
+  }
+
+  &:active {
+    .faq__question {
+      color: $dark-blue;
+    }
+
+    .faq__button {
+      background-color: $dark-blue;
     }
 
     .faq__button::before,
     .faq__button::after {
       background-color: $basic-white;
     }
-  }
-
-  &--disabled {
-    pointer-events: none;
   }
 }
 
@@ -130,15 +145,21 @@
     transform: translate(-50%) rotate(90deg);
   }
 
-  &:hover {
-    cursor: pointer;
-  }
-
+  &:hover,
   &:focus {
+    cursor: pointer;
     outline: none;
 
-    border-color: lightblue;
-    background-color: yellow;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      background-color: $basic-blue;
+    }
+  }
+
+  &:active {
+    background-color: $dark-blue;
 
     &::before,
     &::after {
@@ -147,15 +168,12 @@
   }
 
   &:disabled {
-    pointer-events: none;
-
-    border-color: lightblue;
-    background-color: transparent;
-    opacity: 30%;
+    background-color: $disabled;
+    border-color: $disabled;
 
     &::before,
     &::after {
-      background-color: lightblue;
+      background-color: $basic-white;
     }
   }
 }
@@ -163,6 +181,7 @@
 .faq__answer-wrapper {
   overflow: hidden;
   overflow-y: auto;
+  scrollbar-width: none;
 
   height: 0;
 
@@ -191,6 +210,40 @@
 
 .faq__item--opened {
   background-color: $basic-blue;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: none;
+
+    background-color: $basic-blue;
+    border-color: $basic-white;
+
+    .faq__button {
+      background-color: transparent;
+    }
+
+    .faq__button::after {
+      background-color: $basic-white;
+    }
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    border-color: $dark-blue;
+
+    .faq__question {
+      color: $basic-white;
+    }
+
+    .faq__button {
+      background-color: $basic-white;
+    }
+
+    .faq__button::after {
+      background-color: $dark-blue;
+    }
+  }
 }
 
 .faq__item--opened .faq__question {
@@ -207,6 +260,24 @@
 
   &::after {
     background-color: $basic-blue;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+
+    &::after {
+      background-color: $basic-white;
+    }
+  }
+
+  &:active {
+    background-color: $basic-white;
+    border-color: $basic-white;
+
+    &::after {
+      background-color: $dark-blue;
+    }
   }
 }
 

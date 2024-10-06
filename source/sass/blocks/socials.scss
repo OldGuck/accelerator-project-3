@@ -38,8 +38,40 @@
   }
 
   svg {
+    fill: $basic-white;
+
     @media (min-width: $tablet-width) {
       scale: 160%;
+    }
+  }
+
+  &:hover {
+    svg {
+      opacity: 70%;
+
+      fill: $basic-white;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    background-color: $basic-white;
+
+    svg {
+      opacity: 100%;
+
+      fill: $basic-blue;
+    }
+  }
+
+  &:active {
+    background-color: $dark-blue;
+
+    svg {
+      opacity: 100%;
+
+      fill: $basic-white;
     }
   }
 }

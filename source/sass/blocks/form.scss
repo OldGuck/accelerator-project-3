@@ -59,7 +59,7 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 40px 46px;
+    padding: 30px 40px 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,46 +78,24 @@
 }
 
 .form__title {
-  font-size: 18px;
-  line-height: 22px;
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
     margin: 11px 0;
-
-    font-size: 28px;
-    line-height: 100%;
   }
 
   @media (min-width: $desktop-width) {
     margin: 14px 0;
-
-    font-size: 32px;
-    line-height: 36px;
   }
 }
 
 .form__description {
-  margin: 0;
-
-  font-size: 14px;
-  line-height: 20px;
-  opacity: 90%;
-
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
-
-    font-size: 16px;
-  }
-
-  @media (min-width: $desktop-width) {
-    line-height: 26px;
   }
 }
 
 .form__input-wrapper {
-  display: flex;
-  flex-direction: column;
   gap: 12px;
 }
 
@@ -134,34 +112,24 @@
   @media (min-width: $desktop-width) {
     line-height: 18px;
   }
-}
 
-.form__input {
-  padding: 15px 25px;
-
-  line-height: 18px;
-  color: $basic-white;
-
-  border: 1px rgba($basic-white, 30%) solid;
-  border-radius: 8px;
-  background-color: transparent;
-
-  &--textarea {
-    padding: 10px 25px;
+  &--select {
+    @media (min-width: $desktop-width) {
+      line-height: 14px;
+    }
   }
 }
 
 .form__select {
-  padding: 17px 19px;
+  height: 52px;
 
-  font-size: 14px;
-  line-height: 14px;
-  color: $second-grey;
+  margin-right: 10px;
 
-  border: 1px rgba($basic-white, 30%) solid;
-  border-radius: 8px;
-  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
+
 
 .form__button {
   margin-right: 10px;
@@ -174,4 +142,3 @@
     margin-right: 0;
   }
 }
-

@@ -8,6 +8,50 @@
 
   background-color: $basic-blue;
   border-radius: 100%;
+
+  &:hover {
+    background-color: $basic-white;
+
+    .link__icon {
+      stroke: $basic-blue;
+
+      transform: rotate(45deg);
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    background-color: $basic-blue;
+
+    .link__icon {
+      stroke: $basic-white;
+
+      transform: rotate(45deg);
+    }
+  }
+
+  &:active {
+    background-color: $basic-white;
+
+    .link__icon {
+      stroke: rgba($basic-blue, 70%);
+
+      transform: rotate(45deg);
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    background-color: $disabled;
+  }
+
+  &--disabled .link__icon {
+    stroke: rgba($basic-white, 60%);
+
+    transform: none;
+  }
 }
 
 .link__icon {

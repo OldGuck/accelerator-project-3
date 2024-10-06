@@ -81,6 +81,8 @@
   list-style: none;
 
   li {
+    height: auto;
+
     @media (min-width: $tablet-width) {
       width: 324px;
 
@@ -121,9 +123,14 @@
 }
 
 .programs__picture {
-  border-radius: 12px;
+  min-width: 100%;
+  max-width: auto;
+  height: 100%;
 
   display: block;
+
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .programs__text-wrapper {

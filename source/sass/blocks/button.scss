@@ -17,8 +17,156 @@
     gap: 30px;
   }
 
-  &--light {
-    border-color: $basic-white;
+  &:hover {
+    cursor: pointer;
+
+    background-color: $basic-blue;
+
+    .button__text {
+      color: $basic-white;
+    }
+
+    .button__text::after {
+      background-color: $basic-white;
+    }
+
+    .button__icon {
+      stroke: $basic-blue;
+
+      transform: rotate(45deg);
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    background-color: transparent;
+
+    .button__text {
+      color: $basic-blue;
+    }
+
+    .button__text::after {
+      background-color: $basic-blue;
+    }
+
+    .button__icon {
+      stroke: $basic-white;
+
+      transform: rotate(45deg);
+    }
+  }
+
+  &:active {
+    background-color: $basic-blue;
+
+    .button__text {
+      color: rgba($basic-white, 70%);
+    }
+
+    .button__text::after {
+      background-color: $basic-white;
+    }
+
+    .button__icon {
+      stroke: rgba($basic-blue, 70%);
+
+      transform: rotate(45deg);
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    background-color: transparent;
+    border-color: $disabled;
+
+    .button__text {
+      color: $disabled;
+    }
+
+    .button__text::after {
+      background-color: $disabled;
+    }
+
+    .button__icon {
+      stroke: rgba($basic-white, 60%);
+
+      transform: none;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    background-color: transparent;
+    border-color: $disabled;
+  }
+
+  &--disabled .button__text {
+    color: $disabled;
+  }
+
+  &--disabled .button__text::after {
+    background-color: $disabled;
+  }
+
+  &--disabled .button__icon {
+    stroke: rgba($basic-white, 60%);
+
+    transform: none;
+  }
+}
+
+.button--light {
+  border-color: $basic-white;
+
+  &:hover {
+    background-color: $basic-white;
+
+    .button__text {
+      color: $basic-blue;
+    }
+
+    .button__text::after {
+      background-color: $basic-blue;
+    }
+
+    .button__icon {
+      stroke: $basic-white;
+    }
+  }
+
+  &:focus {
+    background-color: transparent;
+
+    .button__text {
+      color: $basic-white;
+    }
+
+    .button__text::after {
+      background-color: $basic-white;
+    }
+
+    .button__icon {
+      stroke: $basic-blue;
+    }
+  }
+
+  &:active {
+    background-color: $basic-white;
+
+    .button__text {
+      color: rgba($basic-blue, 70%);
+    }
+
+    .button__text::after {
+      background-color: $basic-blue;
+    }
+
+    .button__icon {
+      stroke: rgba($basic-white, 70%);
+    }
   }
 }
 

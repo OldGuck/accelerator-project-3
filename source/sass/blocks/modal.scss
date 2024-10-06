@@ -1,0 +1,190 @@
+.modal {
+  position: fixed;
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: $overlay-dark;
+
+  z-index: 500;
+}
+
+.modal__main-wrapper {
+  position: relative;
+
+  width: 290px;
+
+  margin: 23px 0 0;
+  padding: 40px 15px;
+
+  color: $basic-grey;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  background-color: $basic-white;
+  border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 510px;
+
+    margin-top: 204px;
+    padding: 60px 80px;
+
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 90px;
+  }
+}
+
+.modal__button-close {
+  position: absolute;
+
+  width: 56px;
+  height: 56px;
+
+  padding: 0;
+
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 82px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    cursor: pointer;
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    opacity: 30%;
+
+    .modal__button-close-icon {
+      stroke: $disabled;
+    }
+  }
+}
+
+.modal__button-close-icon {
+  stroke: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.modal__text-wrapper {
+  padding: 0 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 10px;
+
+    gap: 20px;
+  }
+}
+
+.modal__title {
+  line-height: 100%;
+  text-align: center;
+  color: $basic-blue;
+}
+
+.modal__description {
+  text-align: center;
+}
+
+.modal__input-wrapper {
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 12px;
+  }
+}
+
+.modal__label {
+  font-size: 14px;
+  line-height: 100%;
+  opacity: 80%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+  }
+}
+
+.modal__input {
+  height: 44px;
+
+  color: $basic-grey;
+
+  border-color: rgba($basic-grey, 30%);
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
+}
+
+.modal__select {
+  height: 44px;
+
+  padding: 10px 19px;
+
+  color: $basic-grey;
+
+  border-color: rgba($basic-grey, 30%);
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
+}
+
+.modal__label-checkbox {
+  color: $basic-grey;
+}
+
+.modal__button {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 194px;
+
+    align-self: center;
+  }
+}

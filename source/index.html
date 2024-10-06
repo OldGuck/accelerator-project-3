@@ -13,12 +13,221 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header" data-test="hero">
+      <div class="header__container container">
+        <img class="header__logo" src="/__spritemap#sprite-logo-view" width="52" height="52" alt="Логотип Internship.">
+      </div>
+      <div class="header__navigation-container container">
+        <nav class="header__navigation">
+          <button class="header__button button" type="button">
+            <span class="header__button-text button__text">
+              Меню
+            </span>
+            <span class="visually-hidden header__button-text-hidden">
+              Открыть меню.
+            </span>
+            <svg class="header__button-icon header__button-icon--burger button__icon" width="18" height="8">
+              <use href="/__spritemap#sprite-burger-icon"></use>
+            </svg>
+            <svg class="header__button-icon header__button-icon--cross button__icon" width="18" height="18">
+              <use href="/__spritemap#sprite-cross-icon"></use>
+            </svg>
+          </button>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">
+                О проекте
+              </a>
+            </li>
+            <li class="header__item-button">
+              <button class="header__button-link" type="button">
+                <span class="header__button-link-text">
+                  Программы
+                </span>
+              </button>
+              <ul class="header__list-sub">
+                <li class="header__item header__item--sub">
+                  <a class="header__link header__link--sub" href="#">
+                    Стажировки
+                  </a>
+                </li>
+                <li class="header__item header__item--sub">
+                  <a class="header__link header__link--sub" href="#">
+                    Волонтёрство
+                  </a>
+                </li>
+                <li class="header__item header__item--sub">
+                  <a class="header__link header__link--sub" href="#">
+                    Учеба
+                  </a>
+                </li>
+                <li class="header__item header__item--sub">
+                  <a class="header__link header__link--sub" href="#">
+                    Религия
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                Как поехать
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="header__item-button">
+              <button class="header__button-link" type="button">
+                <span class="header__button-link-text">
+                  Новости
+                </span>
+              </button>
+              <ul class="header__list-sub">
+                <li class="header__item header__item--sub">
+                  <a class="header__link header__link--sub" href="#">
+                    Общее
+                  </a>
+                </li>
+                <li class="header__item header__item--sub">
+                  <a class="header__link header__link--sub" href="#">
+                    Волонтёрство
+                  </a>
+                </li>
+                <li class="header__item header__item--sub">
+                  <a class="header__link header__link--sub" href="#">
+                    Стажировки
+                  </a>
+                </li>
+                <li class="header__item header__item--sub">
+                  <a class="header__link header__link--sub" href="#">
+                    Карьера
+                  </a>
+                </li>
+                <li class="header__item header__item--sub">
+                  <a class="header__link header__link--sub" href="#">
+                    Путешествия
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="hero">
+        <h1 class="visually-hidden">
+          Обучение с Internship
+        </h1>
+        <h2 class="visually-hidden">
+          Популярные программы
+        </h2>
+        <div class="hero__swiper-wrapper swiper-container">
+          <ul class="hero__list swiper-wrapper">
+            <li class="hero__item swiper-slide">
+              <div class="hero__picture-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/hero-1-desktop@1x.webp 1x, ./img/hero-1-desktop@2x.webp 2x" width="1440" height="800">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero-1-tablet@1x.webp 1x, ./img/hero-1-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="./img/hero-1-mobile@1x.webp 1x, ./img/hero-1-mobile@2x.webp 2x" width="320" height="568">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/hero-1-desktop@1x.jpg 1x, ./img/hero-1-desktop@2x.jpg 2x" width="1440" height="800">
+                  <source type="image/jpg" media="(min-width: 768px)" srcset="./img/hero-1-tablet@1x.jpg 1x, ./img/hero-1-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__picture" src="./img/hero-1-mobile@1x.jpg" srcset="./img/hero-1-mobile@2x.jpg 2x" width="320" height="568" alt="Студентка за рубежом.">
+                </picture>
+              </div>
+              <div class="hero__content-wrapper">
+                <div class="hero__pagination" data-swiper="hero-pagination"></div>
+                <h3 class="hero__name">
+                  Глобальный профессиональный опыт обучения за рубежом
+                </h3>
+                <p>
+                  Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!
+                </p>
+                <div class="hero__button-wrapper">
+                  <a class="hero__button button" href="#">
+                    <span class="hero__button-text button__text">
+                      Подробнее
+                    </span>
+                    <svg class="hero__button-icon button__icon" width="10" height="10">
+                      <use href="/__spritemap#sprite-button-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="hero__item swiper-slide">
+              <div class="hero__picture-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/hero-2-desktop@1x.webp 1x, ./img/hero-2-desktop@2x.webp 2x" width="1440" height="800">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero-2-tablet@1x.webp 1x, ./img/hero-2-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="./img/hero-2-mobile@1x.webp 1x, ./img/hero-2-mobile@2x.webp 2x" width="320" height="568">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/hero-2-desktop@1x.jpg 1x, ./img/hero-2-desktop@2x.jpg 2x" width="1440" height="800">
+                  <source type="image/jpg" media="(min-width: 768px)" srcset="./img/hero-2-tablet@1x.jpg 1x, ./img/hero-2-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__picture" src="./img/hero-2-mobile@1x.jpg" srcset="./img/hero-2-mobile@2x.jpg 2x" width="320" height="568" alt="Волонтёрская помощь: новая тёплая одежда.">
+                </picture>
+              </div>
+              <div class="hero__content-wrapper">
+                <div class="hero__pagination" data-swiper="hero-pagination"></div>
+                <h3 class="hero__name">
+                  Волонтёрские программы — внесите свой вклад в общество
+                </h3>
+                <p>
+                  Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
+                </p>
+                <div class="hero__button-wrapper">
+                  <a class="hero__button button" href="#">
+                    <span class="hero__button-text button__text">
+                      Подробнее
+                    </span>
+                    <svg class="hero__button-icon button__icon" width="10" height="10">
+                      <use href="/__spritemap#sprite-button-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="hero__item swiper-slide">
+              <div class="hero__picture-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/hero-3-desktop@1x.webp 1x, ./img/hero-3-desktop@2x.webp 2x" width="1440" height="800">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero-3-tablet@1x.webp 1x, ./img/hero-3-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="./img/hero-3-mobile@1x.webp 1x, ./img/hero-3-mobile@2x.webp 2x" width="320" height="568">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/hero-3-desktop@1x.jpg 1x, ./img/hero-3-desktop@2x.jpg 2x" width="1440" height="800">
+                  <source type="image/jpg" media="(min-width: 768px)" srcset="./img/hero-3-tablet@1x.jpg 1x, ./img/hero-3-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__picture" src="./img/hero-3-mobile@1x.jpg" srcset="./img/hero-3-mobile@2x.jpg 2x" width="320" height="568" alt="Стажировка в крупной ИТ компании.">
+                </picture>
+              </div>
+              <div class="hero__content-wrapper">
+                <div class="hero__pagination" data-swiper="hero-pagination"></div>
+                <h3 class="hero__name">
+                  Программы стажировок в крупнейших компаниях мира
+                </h3>
+                <p>
+                  Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.
+                </p>
+                <div class="hero__button-wrapper">
+                  <a class="hero__button button" href="#">
+                    <span class="hero__button-text button__text">
+                      Подробнее
+                    </span>
+                    <svg class="hero__button-icon button__icon" width="10" height="10">
+                      <use href="/__spritemap#sprite-button-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </header>
 
     <main class="main-container">
-      <section data-test="hero">hero</section>
-
       <section class="about" data-test="about">
         <div class="about__container container">
           <div class="about__content-wrapper">
@@ -267,7 +476,201 @@
         </div>
       </section>
 
-      <section data-test="news">news</section>
+      <section class="news" data-test="news">
+        <div class="news__container container">
+          <h2 class="news__title main-title">
+            Новости и материалы
+          </h2>
+          <div class="news__tab-wrapper">
+            <button class="news__tab-button news__tab-button--current" type="button">
+              Общее
+            </button>
+            <button class="news__tab-button" type="button">
+              Волонтёрство
+            </button>
+            <button class="news__tab-button" type="button">
+              Стажировки
+            </button>
+            <button class="news__tab-button" type="button">
+              Карьера
+            </button>
+            <button class="news__tab-button" type="button">
+              Путешествия
+            </button>
+          </div>
+          <div class="news__swiper-wrapper swiper-container">
+            <ul class="news__list swiper-wrapper">
+              <li class="news__item swiper-slide">
+                <div class="news__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/news-1-desktop@1x.webp 1x, ./img/news-1-desktop@2x.webp 2x" width="604" height="400">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/news-1-tablet@1x.webp 1x, ./img/news-1-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="./img/news-1-mobile@1x.webp 1x, ./img/news-1-mobile@2x.webp 2x" width="290" height="330">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/news-1-desktop@1x.jpg 1x, ./img/news-1-desktop@2x.jpg 2x" width="604" height="400">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/news-1-tablet@1x.jpg 1x, ./img/news-1-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__picture" src="./img/news-1-mobile@1x.jpg" srcset="./img/news-1-mobile@2x.jpg 2x" width="290" height="330" alt="Интервью в библиотеке.">
+                  </picture>
+                </div>
+                <div class="news__text-wrapper">
+                  <div class="news__date-wrapper">
+                    <time class="news__date" datetime="2023-03-23">
+                      23/03/2023
+                    </time>
+                  </div>
+                  <div class="news__name-wrapper">
+                    <h3 class="news__name">
+                      Интервью с участницей программы стажировки
+                    </h3>
+                  </div>
+                  <div class="news__description-wrapper">
+                    <p>
+                      Саша рассказывает, <br>как попала в программу и как прошла 6-месячная стажировка в ISOFound
+                    </p>
+                    <a class="news__link link" href="#">
+                      <span class="visually-hidden">
+                        Подробнее
+                      </span>
+                      <svg class="news__link-icon link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-button-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/news-2-desktop@1x.webp 1x, ./img/news-2-desktop@2x.webp 2x" width="286" height="400">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/news-2-tablet@1x.webp 1x, ./img/news-2-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="./img/news-2-mobile@1x.webp 1x, ./img/news-2-mobile@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/news-2-desktop@1x.jpg 1x, ./img/news-2-desktop@2x.jpg 2x" width="286" height="400">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/news-2-tablet@1x.jpg 1x, ./img/news-2-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__picture" src="./img/news-2-mobile@1x.jpg" srcset="./img/news-2-mobile@2x.jpg 2x" width="290" height="240" alt="Пляж Тель-Авив.">
+                  </picture>
+                </div>
+                <div class="news__text-wrapper news__text-wrapper--smaller">
+                  <div class="news__date-wrapper">
+                    <time class="news__date" datetime="2023-03-20">
+                      20/03/2023
+                    </time>
+                  </div>
+                  <div class="news__name-wrapper">
+                    <h3 class="news__name">
+                      Путешествуем по миру
+                    </h3>
+                  </div>
+                  <div class="news__description-wrapper">
+                    <p>
+                      Какие места посещают <br>наши студенты весной
+                    </p>
+                    <a class="news__link link" href="#">
+                      <span class="visually-hidden">
+                        Подробнее
+                      </span>
+                      <svg class="news__link-icon link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-button-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/news-3-desktop@1x.webp 1x, ./img/news-3-desktop@2x.webp 2x" width="286" height="400">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/news-3-tablet@1x.webp 1x, ./img/news-3-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="./img/news-3-mobile@1x.webp 1x, ./img/news-3-mobile@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/news-3-desktop@1x.jpg 1x, ./img/news-3-desktop@2x.jpg 2x" width="286" height="400">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/news-3-tablet@1x.jpg 1x, ./img/news-3-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__picture" src="./img/news-3-mobile@1x.jpg" srcset="./img/news-3-mobile@2x.jpg 2x" width="290" height="240" alt="Девочка держит значок волонтёра.">
+                  </picture>
+                </div>
+                <div class="news__text-wrapper">
+                  <div class="news__date-wrapper">
+                    <time class="news__date" datetime="2023-03-17">
+                      17/03/2023
+                    </time>
+                  </div>
+                  <div class="news__name-wrapper">
+                    <h3 class="news__name">
+                      Новая программа волонтёрства
+                    </h3>
+                  </div>
+                  <div class="news__description-wrapper">
+                    <p>
+                      Программа помощи детям длительностью 4 месяца
+                    </p>
+                    <a class="news__link link" href="#">
+                      <span class="visually-hidden">
+                        Подробнее
+                      </span>
+                      <svg class="news__link-icon link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-button-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/news-4-desktop@1x.webp 1x, ./img/news-4-desktop@2x.webp 2x" width="286" height="400">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/news-4-tablet@1x.webp 1x, ./img/news-4-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="./img/news-4-mobile@1x.webp 1x, ./img/news-4-mobile@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/news-4-desktop@1x.jpg 1x, ./img/news-4-desktop@2x.jpg 2x" width="286" height="400">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/news-4-tablet@1x.jpg 1x, ./img/news-4-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__picture" src="./img/news-4-mobile@1x.jpg" srcset="./img/news-4-mobile@2x.jpg 2x" width="290" height="240" alt="Утреннее собрание в крупной компании.">
+                  </picture>
+                </div>
+                <div class="news__text-wrapper">
+                  <div class="news__date-wrapper">
+                    <time class="news__date" datetime="2023-03-10">
+                      10/03/2023
+                    </time>
+                  </div>
+                  <div class="news__name-wrapper">
+                    <h3 class="news__name">
+                      Построй свою карьеру
+                    </h3>
+                  </div>
+                  <div class="news__description-wrapper">
+                    <p>
+                      Ведущие компании готовы трудоустроить выпускников стажировки
+                    </p>
+                    <a class="news__link link" href="#">
+                      <span class="visually-hidden">
+                        Подробнее
+                      </span>
+                      <svg class="news__link-icon link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-button-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="news__button-wrapper slider">
+            <button class="news__slider-button news__slider-button--prev slider__button slider__button--prev" type="button">
+              <svg class="news__slider-button-icon slider__button-icon" width="10" height="10">
+                <use href="/__spritemap#sprite-slider-arrow"></use>
+              </svg>
+              <span class="visually-hidden">
+                Показать предыдущий слайд.
+              </span>
+            </button>
+            <div class="news__pagination"></div>
+            <button class="news__slider-button news__slider-button--next slider__button slider__button--next" type="button">
+              <svg class="news__slider-button-icon slider__button-icon" width="10" height="10">
+                <use href="/__spritemap#sprite-slider-arrow"></use>
+              </svg>
+              <span class="visually-hidden">
+                Показать следующий слайд.
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
 
       <section class="faq" data-test="FAQ">
         <div class="faq__container container">
@@ -330,7 +733,7 @@
             <li class="faq__item">
               <div class="faq__question-wrapper">
                 <h3 class="faq__question">
-                  Признаётся ли учёба в рамках проекта<br>для дальнейшего ообучения?
+                  Признаётся ли учёба в рамках проекта <br>для дальнейшего обучения?
                 </h3>
                 <button class="faq__button" type="button">
                   <span class="visually-hidden">
@@ -383,7 +786,7 @@
                     </picture>
                   </div>
                   <h3 class="reviews__name">
-                    Лола<br>Алекс
+                    Лола <br>Алекс
                   </h3>
                   <dl class="reviews__data-list">
                     <div class="reviews__data-item">
@@ -422,7 +825,7 @@
                     </picture>
                   </div>
                   <h3 class="reviews__name">
-                    Давид<br>Иванов
+                    Давид <br>Иванов
                   </h3>
                   <dl class="reviews__data-list">
                     <div class="reviews__data-item">
@@ -494,7 +897,7 @@
                   Телефон
                 </h3>
                 <!-- Для состояния disabled необходимо добавить класс contacts__text с модификатором disabled -->
-                <a class="contacts__text" href="tel:+796387687676">
+                <a class="contacts__text contacts__text--interactive" href="tel:+796387687676">
                   +7 963 876 876 76
                 </a>
               </li>
@@ -503,7 +906,7 @@
                   Email
                 </h3>
                 <!-- Для состояния disabled необходимо добавить класс contacts__text с модификатором disabled -->
-                <a class="contacts__text" href="mailto:Info@stazh.ru">
+                <a class="contacts__text contacts__text--interactive" href="mailto:Info@stazh.ru">
                   Info@stazh.ru
                 </a>
               </li>
@@ -525,56 +928,54 @@
           <div class="form__form-wrapper">
             <form class="form__main-wrapper" method="post" action="https://echo.htmlacademy.ru">
               <div class="form__text-wrapper">
-                <h2 class="form__title main-title">
+                <h2 class="form__title form-object__title main-title">
                   Напишите нам
                 </h2>
-                <p class="form__description">
+                <p class="form__description form-object__description">
                   Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!
                 </p>
               </div>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="name">
+              <div class="form__input-wrapper form-object__input-wrapper">
+                <label class="form__label form-object__label" for="name">
                   Имя
                 </label>
-                <input class="form__input" id="name" type="text" name="name" autocomplete="off" required>
+                <input class="form__input form__input--name form-object__input" id="name" type="text" name="name" autocomplete="off" required>
               </div>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="phone">
+              <div class="form__input-wrapper form-object__input-wrapper">
+                <label class="form__label form-object__label" for="phone">
                   Телефон
                 </label>
-                <input class="form__input" id="phone" type="tel" name="phone" autocomplete="off" required>
+                <input class="form__input form__input--phone form-object__input" id="phone" type="tel" name="phone" autocomplete="off" required>
               </div>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="message">
+              <div class="form__input-wrapper form-object__input-wrapper">
+                <label class="form__label form-object__label" for="message">
                   Ваше сообщение
                 </label>
-                <textarea class="form__input form__input--textarea" id="message" name="message" rows="4" required></textarea>
+                <textarea class="form__input form__input--textarea form-object__input form-object__input--textarea" id="message" name="message" rows="4" required></textarea>
               </div>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="city">
+              <div class="form__input-wrapper form__input-wrapper--select form-object__input-wrapper form-object__input-wrapper--select">
+                <label class="form__label form__label--select form-object__label form-object__label--select" for="city">
                   Выберите город
                 </label>
-                <select class="form__select" id="city" name="city" required>
-                  <option value="Saint-Petersburg-1">
-                    Санкт-Петербург
-                  </option>
-                  <option value="Saint-Petersburg-2">
-                    Санкт-Петербург
-                  </option>
-                  <option value="Saint-Petersburg-3">
-                    Санкт-Петербург
-                  </option>
-                  <option value="Saint-Petersburg-4">
-                    Санкт-Петербург
-                  </option>
-                </select>
+                <input class="visually-hidden form__input-select" tabindex="-1" type="text" name="city" autocomplete="off" required>
+                <div class="form__select-menu form-object__select-menu">
+                  <button class="form__select form-object__select" type="button" id="city">
+                    <span class="form__select-text form-object__select-text"></span>
+                  </button>
+                  <ul class="form__options-list form-object__options-list">
+                    <button class="form__option form-object__option" type="button">Санкт-Петербург</button>
+                    <button class="form__option form-object__option" type="button">Санкт-Петербург</button>
+                    <button class="form__option form-object__option" type="button">Санкт-Петербург</button>
+                    <button class="form__option form-object__option" type="button">Санкт-Петербург</button>
+                  </ul>
+                </div>
               </div>
-              <div class="form__input-checkbox-wrapper">
-                <input class="visually-hidden" id="consent-of-personal-data" type="checkbox" name="consent-of-personal-data" required>
-                <span class="form__input-checkbox">
-                </span>
-                <label class="form__label-checkbox" for="consent-of-personal-data">
-                  Я согласен на обработку моих персональных данных
+              <div class="form__input-checkbox-wrapper form-object__input-checkbox-wrapper">
+                <label class="form__label-checkbox form-object__label-checkbox" for="consent-of-personal-data">
+                  <input class="visually-hidden form__input-checkbox form-object__input-checkbox" id="consent-of-personal-data" type="checkbox" name="consent-of-personal-data" required>
+                  <span class="form__input-checkbox-mark form-object__input-checkbox-mark">
+                  </span>
+                  Я согласен на обработку моих персональных <br>данных
                 </label>
               </div>
               <button class="form__button button button--light" type="submit">
@@ -686,6 +1087,74 @@
         </section>
       </div>
     </footer>
+
+    <template id="modal">
+      <div class="modal">
+        <form class="modal__main-wrapper" method="post" action="https://echo.htmlacademy.ru">
+          <button class="modal__button-close" type="button">
+            <span class="visually-hidden">
+              Закрыть модальное окно.
+            </span>
+            <svg class="modal__button-close-icon" width="16" height="16">
+              <use href="/__spritemap#sprite-cross-icon"></use>
+            </svg>
+          </button>
+          <div class="modal__text-wrapper">
+            <h2 class="modal__title form-object__title main-title">
+              Напишите нам
+            </h2>
+            <p class="modal__description form-object__description">
+              Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!
+            </p>
+          </div>
+          <div class="modal__input-wrapper form-object__input-wrapper">
+            <label class="modal__label form-object__label form-object__label--light" for="name-modal">
+              Имя
+            </label>
+            <input class="modal__input modal__input--name form-object__input form-object__input--light" id="name-modal" type="text" name="name" autocomplete="off" required>
+          </div>
+          <div class="modal__input-wrapper form-object__input-wrapper">
+            <label class="modal__label form-object__label form-object__label--light" for="phone-modal">
+              Телефон
+            </label>
+            <input class="modal__input modal__input--phone form-object__input form-object__input--light" id="phone-modal" type="tel" name="phone" autocomplete="off" required>
+          </div>
+          <div class="modal__input-wrapper modal__input-wrapper--select form-object__input-wrapper form-object__input-wrapper--select">
+            <label class="modal__label modal__label--select form-object__label form-object__label--select" for="city">
+              Выберите город
+            </label>
+            <input class="visually-hidden modal__input-select" tabindex="-1" type="text" name="city" autocomplete="off" required>
+            <div class="modal__select-menu form-object__select-menu">
+              <button class="modal__select form-object__select form-object__select--light" type="button" id="city">
+                <span class="modal__select-text form-object__select-text"></span>
+              </button>
+              <ul class="modal__options-list form-object__options-list">
+                <button class="modal__option form-object__option" type="button">Санкт-Петербург</button>
+                <button class="modal__option form-object__option" type="button">Санкт-Петербург</button>
+                <button class="modal__option form-object__option" type="button">Санкт-Петербург</button>
+                <button class="modal__option form-object__option" type="button">Санкт-Петербург</button>
+              </ul>
+            </div>
+          </div>
+          <div class="modal__input-checkbox-wrapper form-object__input-checkbox-wrapper">
+            <label class="modal__label-checkbox form-object__label-checkbox" for="consent-of-personal-data-modal">
+              <input class="visually-hidden modal__input-checkbox form-object__input-checkbox form-object__input-checkbox--light" id="consent-of-personal-data-modal" type="checkbox" name="consent-of-personal-data" required>
+              <span class="modal__input-checkbox-mark form-object__input-checkbox-mark form-object__input-checkbox-mark--light">
+              </span>
+              Я согласен на обработку моих персональных данных
+            </label>
+          </div>
+          <button class="modal__button button" type="submit">
+            <span class="modal__button-text button__text">
+              Отправить
+            </span>
+            <svg class="modal__button-icon button__icon" width="10" height="10">
+              <use href="/__spritemap#sprite-button-arrow"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </template>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>

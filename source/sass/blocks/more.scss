@@ -52,6 +52,38 @@
 
     background-color: $basic-grey;
   }
+
+  &:hover {
+    opacity: 70%;
+
+    color: $basic-blue;
+
+    &::after {
+      background-color: $basic-blue;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    opacity: 100%;
+
+    color: $basic-blue;
+
+    &::after {
+      background-color: $basic-blue;
+    }
+  }
+
+  &:active {
+    opacity: 100%;
+
+    color: $dark-blue;
+
+    &::after {
+      background-color: $dark-blue;
+    }
+  }
 }
 
 .more__text {
